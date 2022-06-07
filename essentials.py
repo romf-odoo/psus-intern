@@ -123,54 +123,54 @@ s = {4,32,2,2}
 
 print(s)
 
-print(2 in s)
+# print(2 in s)
 
-#dictionaries
-x = {'key':4}
-x['key2 '] = "seconfd value"
-print("x: ", x)
-# functions
-def func(x,y):
-    print("Run",x,y)
-    return x*y
-print(func(5,6))  
-#several elements returned in the functio will be returned in a tuple
-def func1(x,y):
-    print("Run",x,y)
-    return x*y, x/y
-print(func1(5,6)) 
-# destructure a tuple
-r1, r2 = func1(5,6)
-print(r1, r2) 
-# unpack operator separate a list or tuple into individual elements
-def func3(*args, **kwargs):
-    print(*args)
-x = [1,23,2345,2727]
-print(*x)
-# handling exeptions
-try: 
-    x= 7/0
-except Exception as e:
-    print(e)
-finally:
-    print("finally")
-#lambda is a one line anonimous function 
-x = lambda x, y:x+y
-print(x(2, 5))
-#map applies the lambda function to each element of the list 
-x = [1,2,3,4,5,3,3,21,2,21,2,313,1,23,142,4]
+# #dictionaries
+# x = {'key':4}
+# x['key2 '] = "seconfd value"
+# print("x: ", x)
+# # functions
+# def func(x,y):
+#     print("Run",x,y)
+#     return x*y
+# print(func(5,6))  
+# #several elements returned in the functio will be returned in a tuple
+# def func1(x,y):
+#     print("Run",x,y)
+#     return x*y, x/y
+# print(func1(5,6)) 
+# # destructure a tuple
+# r1, r2 = func1(5,6)
+# print(r1, r2) 
+# # unpack operator separate a list or tuple into individual elements
+# def func3(*args, **kwargs):
+#     print(*args)
+# x = [1,23,2345,2727]
+# print(*x)
+# # handling exeptions
+# try: 
+#     x= 7/0
+# except Exception as e:
+#     print(e)
+# finally:
+#     print("finally")
+# #lambda is a one line anonimous function 
+# x = lambda x, y:x+y
+# print(x(2, 5))
+# #map applies the lambda function to each element of the list 
+# x = [1,2,3,4,5,3,3,21,2,21,2,313,1,23,142,4]
 
-mp = map(lambda i: i+2,x)
-print(list(mp))
-
-
-#filter returns true or false base on the value of the item
-filtr = filter(lambda i: i % 2 == 0, x)
-print(list(filtr))
+# mp = map(lambda i: i+2,x)
+# print(list(mp))
 
 
+# #filter returns true or false base on the value of the item
+# filtr = filter(lambda i: i % 2 == 0, x)
+# print(list(filtr))
 
-#f strings
 
-cheers = f'hello {1+2}'
-print(cheers);
+
+# #f strings
+
+# cheers = f'hello {1+2}'
+# print(cheers);
